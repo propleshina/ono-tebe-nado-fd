@@ -25,6 +25,10 @@ blockquote {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   color: inherit;
 }
@@ -37,6 +41,6 @@ button {
   font: inherit;
 }
 
-address{
+address {
   font-style: normal;
 }
