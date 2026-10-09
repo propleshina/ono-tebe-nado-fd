@@ -12,7 +12,7 @@
   <body>
     <header class="header">
       <nav class="navigation">
-        <ul class="navigation__curcle">
+        <ul class="navigation__list">
           <li class="navigation__list__active">
             <a href="#0" class="navigation__link navigation__link__active"
               >главная</a
@@ -43,13 +43,13 @@
     <main>
       <!--Секция-обложка с картинкой на заднем фоне-->
       <section class="cover">
-        <h1 class="header__cover">
+        <h1 class="cover__title">
           <span class="accent-span">ОНО</span>
           <span class="accent-span text-center">ТЕБЕ</span>
           <span class="accent-span text-right">НАДО</span>
         </h1>
-        <div class="description">
-          <p class="description__text">
+        <div class="cover__description">
+          <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
           </p>
           <button class="button">Сделать ставку</button>
@@ -60,12 +60,11 @@
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
-            <a class="card-link" href="#0">
-              <div class="card card_type_film">
+            <a class="card__link" href="#0">
+              <div class="card card__type_film">
                 <article class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </article>
-
                 <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
@@ -74,14 +73,12 @@
               </div>
             </a>
           </li>
-
           <li class="lots__card-list-item">
-            <a class="card-link" href="#0">
-              <div class="card card_type_book">
+            <a class="card__link" href="#0">
+              <div class="card card__type_book">
                 <article class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </article>
-
                 <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
@@ -93,14 +90,12 @@
               </div>
             </a>
           </li>
-
           <li class="lots__card-list-item">
-            <a class="card-link" href="#0">
-              <div class="card card_type_picture">
+            <a class="card__link" href="#0">
+              <div class="card card__type_picture">
                 <article class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </article>
-
                 <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
@@ -115,9 +110,9 @@
       </section>
       <!--Секция Об аукционе-->
       <section class="about">
-        <div class="logo-white">
+        <div class="about__logo">
           <img
-            class="logo-white__image"
+            class="about__logo-image"
             src="./images/logo-white.svg"
             alt="Логотип"
           />
@@ -156,28 +151,34 @@
           >
         </address>
       </div>
-      <div>
-        <nav class="footer__menu">
-          <ul class="footer__menu-list">
-            <li class="footer__menu-list-item">
-              <a href="#0" class="footer__menu-link footer__menu-link_active"
-                >главная</a
-              >
-            </li>
-            <li class="footer__menu-list-item">
-              <a href="#0" class="footer__menu-link">посмотреть лоты</a>
-            </li>
-            <li class="footer__menu-list-item">
-              <a href="#0" class="footer__menu-link">об аукционе</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item">
+            <a href="#0" class="footer__menu-link footer__menu-link_active"
+              >главная</a
+            >
+          </li>
+          <li class="footer__menu-list-item">
+            <a href="#0" class="footer__menu-link">посмотреть лоты</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a href="#0" class="footer__menu-link">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
       <div class="footer__social">
         <ul class="footer__social-list">
-          <li class="footer__social-list-item"><img src="./images/yt.svg" alt="Иконка YouTube" /></li>
-          <li class="footer__social-list-item"><img src="./images/vk.svg" alt="Иконка VK" /></li>
-          <li class="footer__social-list-item"><img src="./images/pinterest.svg" alt="Иконка Pinterest" /></li>
+          <li class="footer__social-list-item">
+            <a href="#0"><img src="./images/yt.svg" alt="YouTube" /></a>
+          </li>
+          <li class="footer__social-list-item">
+            <a href="#0"><img src="./images/vk.svg" alt="VK" /></a>
+          </li>
+          <li class="footer__social-list-item">
+            <a href="#0"
+              ><img src="./images/pinterest.svg" alt="Pinterest"
+            /></a>
+          </li>
         </ul>
       </div>
     </footer>

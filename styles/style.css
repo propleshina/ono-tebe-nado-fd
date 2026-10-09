@@ -1,71 +1,15 @@
-.cover {
-  /*Этот способ показала нейросеть. Я решила использовать его, потому что так гораздо удобнее*/
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/cover.jpg);
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  padding: 165px 50px 50px 50px;
-}
-
-.lots {
-  padding: 180px 24px 120px 24px;
-}
-
-.about {
-  padding: 0px 24px 180px 24px;
-    display: grid;
-  grid-template-columns: 359px 1fr;
-  align-items: center;
-  justify-content: center;
-}
-
-.button {
-  background-color: transparent;
-  color: #fff;
-  text-transform: uppercase;
-  border: 1px solid #fff;
-  width: 256px;
-  height: 51px;
-}
-
-.description {
-  display: flex;
-  align-items: center;
-  margin-top: 106px;
-  font-family: "Raleway";
-  font-size: 22px;
-  line-height: 28px;
-  color: #fff;
-  text-transform: uppercase;
-  justify-content: space-between;
-}
-
-.description__text {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 127%;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: "Raleway";
-  word-spacing: 85%;
-}
-
 .header {
   padding: 92px 50px 96px 50px;
-
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   justify-content: center;
 }
 
-.header__cover {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.logo-black__image {
+  display: block;
+  width: 148px;
+  height: 105px;
 }
 
 .navigation {
@@ -75,85 +19,15 @@
   justify-content: space-between;
 }
 
-.lot {
-}
-
-.card_type_film {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.card_type_book {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.card_type_picture {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.logo-white {
-  background-color: #000;
-  border-radius: 50%;
-  width: 240px;
-  height: 240px;
-  display: flex;
-  justify-content: center;
-  align-content: start;
-  align-self: start;
-  justify-self: start;
-    margin-top:35px;
-margin-left: 47px ;
-}
-
-.logo-white__image {
-  display: block;
-  width: 148px;
-  height: auto;
-grid-column: 1;
-grid-row: 1;
-}
-.logo-black__image {
-  display: block;
-  width: 148px;
-  height: 105px;
-}
-
-.accent-span {
-  display: block;
-  font-weight: 700;
-  font-size: 100px;
-  line-height: 115%;
-  letter-spacing: 30px;
-  text-transform: uppercase;
-  color: #fff;
-}
-.text-center {
-  text-align: center;
-  /**Не до конца поняла, почему отступ был больше 50px, поэтому сделала -30px**/
-  margin-right: -30px;
-}
-.text-right {
-  text-align: end;
-  /**Здесь также, как и в text-center**/
-  margin-right: -30px;
-}
-
-.navigation__curcle {
+.navigation__list {
   list-style-type: circle;
   display: flex;
   flex-direction: row;
   gap: 32px;
+}
+
+.navigation__list__active {
+  list-style: none;
 }
 
 .navigation__link {
@@ -167,7 +41,6 @@ grid-row: 1;
 }
 
 .address {
-
   font-size: 18px;
   line-height: 24.3px;
   text-underline-offset: 4px;
@@ -178,18 +51,89 @@ grid-row: 1;
   overflow-wrap: break-word;
 }
 
-.address__header{
+.address__header {
   max-width: 240px;
   justify-self: end;
 }
 
-.navigation__list__active {
-  list-style: none;
+.cover {
+  /*Этот способ показала нейросеть. Я решила использовать его, потому что так гораздо удобнее*/
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/cover.jpg);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 165px 50px 50px;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accent-span {
+  display: block;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+  /**Не до конца поняла, почему отступ был больше 50px, поэтому сделала -30px**/
+  margin-right: -30px;
+}
+
+.text-right {
+  text-align: end;
+  /**Здесь также, как и в text-center**/
+  margin-right: -30px;
+}
+
+.cover__description {
+  display: flex;
+  align-items: center;
+  margin-top: 106px;
+  font-family: "Raleway";
+  font-size: 22px;
+  line-height: 28px;
+  color: #fff;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+
+.cover__description-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 127%;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Raleway";
+  word-spacing: 85%;
+}
+
+.button {
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  width: 256px;
+  height: 51px;
+}
+
+.lots {
+  padding: 180px 24px 120px 24px;
 }
 
 .lots__heading {
   font-family: "Raleway";
-  font-size: bold;
+  font-weight: bold;
   font-size: 40px;
   text-transform: uppercase;
   margin-left: 40px;
@@ -201,134 +145,193 @@ grid-row: 1;
   flex-wrap: wrap;
   gap: 25px;
 }
+
 .lots__card-list-item {
   width: 334px;
   min-height: 596px;
 }
-.card-link {
-    text-decoration: none;
 
+.lots__look-more-link {
+  display: block;
+  margin-top: 30px;
+  margin-left: 40px;
+  text-decoration: underline;
+  font-size: 20px;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 0.5px;
 }
+
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 596px;
-    box-sizing: border-box;
-padding: 48px 40px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 596px;
+  box-sizing: border-box;
+  padding: 48px 40px;
 }
 
-.lots__look-more-link{
-    display: block;
-    margin-top: 30px;
-    margin-left: 40px;
-    text-decoration: underline;
-    font-size: 20px;
-    text-underline-offset: 5px;
-      text-decoration-thickness:0.5px;
+.card__link {
+  text-decoration: none;
 }
 
-.card__title{
-font-weight: 700;
-font-size: 22px;
-line-height: 120%;
-text-decoration: underline;
-    text-underline-offset: 3px;
-      text-decoration-thickness:0.5px;
-text-decoration-skip-ink: none;
-text-transform: uppercase;
-color: #fff;
+.card__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 0.5px;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  color: #fff;
 }
 
-.card__text{
+.card__text {
   font-weight: 400;
-font-size: 20px;
-line-height: 120%;
-color: #fff;  
+  font-size: 20px;
+  line-height: 120%;
+  color: #fff;
 }
 
-.about__title{
-    font-weight: 700;
-font-size: 40px;
-text-transform: uppercase;
-color: #000;
-margin-top: 136px;
-margin-bottom: 100px;
+.card__type_film {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/card-lot-01.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.about__block{
-    grid-column: 2;
-    grid-row:1;
+.card__type_book {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/card-lot-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card__type_picture {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/card-lot-03.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.about {
+  padding: 0px 24px 180px;
+  display: grid;
+  grid-template-columns: 359px 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__logo {
+  background-color: #000;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-content: start;
+  align-self: start;
+  justify-self: start;
+  margin-top: 35px;
+  margin-left: 47px;
+}
+
+.about__logo-image {
+  display: block;
+  width: 148px;
+  height: auto;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.about__block {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 136px;
+  margin-bottom: 100px;
 }
 
 .about__text {
-    font-weight: 400;
-font-size: 20px;
-line-height: 120%;
-color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #000;
 }
 
-.about__text-blocks{
-display: flex;
-flex-direction: column;
-gap:24px;
+.about__text-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.footer{
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: start;
-    padding: 0 50px;
+.footer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+  padding: 0 50px 82px;
 }
 
-.footer__social{
-    grid-column: 3;
-    grid-row: 1;
-    justify-self: end;
+.footer__address {
+  grid-column: 1;
+  grid-row: 1;
+  box-sizing: border-box;
+  justify-self: start;
+  width: 247px;
 }
 
-.footer__menu{
-grid-column: 2;
-grid-row: 1;
+.footer__menu {
+  grid-column: 2;
+  grid-row: 1;
 }
-.footer__menu-list{
-display: flex;
-flex-direction: column;
-gap: -1px;
-margin: 0;
-padding: 0;
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: -1px;
+  margin: 0;
+  padding: 0;
 }
-.footer__menu-list-item{
-font-weight: 400;
-font-size: 18px;
-text-align: center;
-color: #000;
+
+.footer__menu-list-item {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
 }
+
 .footer__menu-link {
   text-underline-offset: 4px;
 }
-.footer__menu-link_active{
-text-decoration: none;
-}
-.footer__social-list{
-display: flex;
-gap: 48px;
-margin: 0;
-padding: 0;
-}
-.footer__social-list-item{
-    display: block;
-width: 48px;
-height: auto;
+
+.footer__menu-link_active {
+  text-decoration: none;
 }
 
-.footer__address{
-    grid-column: 1;
-    grid-row: 1;
-        box-sizing: border-box;
-    justify-self: start;
-    width: 247px;
-
+.footer__social {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
 }
 
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__social-list-item {
+  display: block;
+  width: 48px;
+  height: auto;
+}
